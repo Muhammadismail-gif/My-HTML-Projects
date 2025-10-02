@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Website Example</title>
+  
+</head>
+<body>
+  <!-- Site Header -->
+  <header>
+    <h1>My Accessible Website</h1>
+    <p>Welcome! This site demonstrates accessibility best practices in HTML.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        We are committed to building websites that everyone can use,
+        including people who rely on screen readers, keyboards, or other assistive technologies.
+      </p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Sunset view over the mountains">
+        <figcaption>Beautiful mountain sunset</figcaption>
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Calm beach with waves">
+        <figcaption>Peaceful beach waves</figcaption>
+      </figure>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form class="form-section" action="#" method="post">
+        <div>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <br>
+        <div>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+        <div>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Accessible Web Co. | 
+      <a href="#main-content">Back to top</a>
+    </p>
+  </footer>
+</body>
+</html>
